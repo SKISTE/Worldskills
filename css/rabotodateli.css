@@ -1,0 +1,44 @@
+.Wrapper .rabotodateli{
+    display: flex;
+    flex-direction: column;
+}
+.Wrapper .rabotodateli .title{
+    font-size: 1.4em;
+}
+.Wrapper .rabotodateli .article{
+    padding-top: 4%;
+    display: grid;
+    position: relative;
+    grid-template-columns: .5fr 1fr;
+    /* min-height: 50%; */
+}
+.Wrapper .rabotodateli .article .image img{
+    /* height: 5%; */
+    width: 90%;
+    border: var(--primary) 4px solid;
+    border-radius: 50%;
+}
+.Wrapper .rabotodateli .article .info{
+    display: flex;
+    height: 100%;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Wrapper .rabotodateli .article .info .title{
+    font-size: 2em;
+}
+.Wrapper .rabotodateli .article .info .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: end;
+}
+.Wrapper .rabotodateli .article .info .footer .morebtn{
+    background: var(--primary);
+    padding: 5px;
+    border-radius: 5px;
+}
+.Wrapper .rabotodateli .article .info .footer .dates{
+    color: var(--primary);
+}

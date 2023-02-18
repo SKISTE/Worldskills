@@ -1,0 +1,71 @@
+.login_div{
+    background-color: var(--div_bg);
+    width: 20vw;
+    height: 50vh;
+    border-top: 5px solid var(--primary);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.login_div img{
+    width: 20%;
+}
+.login_div .enter_in_acc_text{
+    padding-top: 5%;
+    font-size: 1.6em;
+}
+.login_div input{
+    margin-top: 5%;
+    padding-top: 3%;
+    width: 70%;
+    background: var(--btn_bg);
+    outline: none;
+    border:none;
+    border-bottom: 2px solid var(--primary);
+    color: white;
+    font-size: 1.4em;
+    transition: .3s;
+}
+.login_div input:focus,.login_div input:hover{
+    background: #6b6a6a;
+    transition: .3s;
+}
+.login_div .forget_and_remember{
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.login_div .forget_and_remember span{
+    color: var(--primary);
+}
+.login_div .forget_and_remember div{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.login_div .forget_and_remember div span{
+    color: white;
+}
+.login_div .forget_and_remember div input{
+    width: 10%;
+}
+.login_div .enter_in_acc{
+    width: 50%;
+    border: none;
+    background-color: var(--primary);
+    padding: 3%;
+}
+.login_div .enter_in_acc:hover{
+    width: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: var(--primary);
+    padding: 3%;
+}
+.IN_CENTER{
+    min-height: 80.71vh !important;
+}

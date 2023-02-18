@@ -1,0 +1,53 @@
+.Wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.Wrapper .all_info{
+    width: 100%;
+    /* min-height: 10%; */
+    border-radius: 10px;
+    padding: 2%;
+    box-sizing: border-box;
+    background: var(--btn_bg);
+    grid-column: span 3;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    row-gap: 10px;
+}
+.Wrapper .all_info .img_and_another_info{
+    display: grid;
+    grid-template-columns: .4fr 1fr;
+    height: 80%;
+}
+.Wrapper .all_info .img_and_another_info img{
+    border-radius: 10px;
+}
+.Wrapper .all_info .img_and_another_info .another_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.Wrapper .all_info .img_and_another_info .another_info .name{
+    font-size:2em;
+}
+.Wrapper .all_info .resume{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.Wrapper .all_info .resume ul{
+    margin: 0;
+    padding-left: 20px;
+}
+.Wrapper .stajirovkii,.Wrapper .vakansiii,.Wrapper .praktiki,.Wrapper .meropriyatia{
+    min-height: 10vh;
+    background-color: var(--btn_bg);
+    box-sizing: border-box;
+    padding: 5%;
+}
+.Wrapper .stajirovkii span,.Wrapper .praktiki span,.Wrapper .vakansiii span, .Wrapper .meropriyatia span{
+    font-size: 1.5em;
+}
+.Wrapper .stajirovkii ul, .Wrapper .praktiki ul,.Wrapper .vakansiii ul,.Wrapper .meropriyatia ul{
+    font-size: 1.1em;
+    padding-left: 20px;
+}

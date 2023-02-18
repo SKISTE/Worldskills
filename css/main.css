@@ -1,0 +1,182 @@
+:root{
+    --div_bg: #272727;
+    --html_bg: #303030;
+    --btn_bg: #2D2D2D;
+    --primary: #228E5D;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background: var(--html_bg);
+}
+div, span, a{
+    color: white;
+}
+div::-webkit-scrollbar {
+    width: 4px;      
+}
+div::-webkit-scrollbar-track {
+    background: none;
+}
+div::-webkit-scrollbar-thumb {
+    background-color: var(--primary);   
+    border-radius: 50px;     
+}
+.Header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5vh;
+    background: var(--div_bg);
+    position: relative;
+}
+.Header a{
+    color: white;
+    transition: .4s;
+    text-decoration: none;
+}
+.Header a:visited{
+    color: white;
+}
+.Header .menu a{
+    padding-left: 10px;
+}
+.Header a:hover{
+    color: var(--primary);
+    transition: .4s;
+}
+.Header .logo {
+    height: 100%;
+}
+.Header .logo img{
+    /* background: url('../img/Logo.svg'); */
+    position: relative;
+    height: 100%;
+    /* width: 100px; */
+    /* background-color: #22005D; */
+}
+.Header .loginbtns{
+    display: flex;
+    justify-content: space-around;
+    width: 10vw;
+    align-items: center;
+}
+.Header .loginbtns .loginbutton a{
+    color: white;
+}
+.Header .loginbtns .changesite{
+    background: var(--primary);
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+.Header .loginbtns .changesite a:hover{
+    color: white ;
+}
+.IN_CENTER{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Wrapper{
+    background: var(--div_bg);
+    width: 70vw;
+    min-height: 50vh;
+    margin-top: 10vh;
+    padding: 3%;
+    position: relative;
+    /* margin: 10%; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    row-gap: 30px;
+    column-gap: 30px;
+    /* height: 100%; */
+}
+.Wrapper .stajirovki, .Wrapper .vakansii, .Wrapper .meropriatia, .Wrapper .rabotodateli{
+    width: 100%;
+    height: 100%;
+    min-height: 30vh;
+    max-height: 60vh;
+    /* margin: 2%; */
+    box-sizing: border-box;
+    padding: 3%;
+    overflow: auto;
+    background-color: var(--btn_bg);
+}
+.Wrapper .news{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 3%;
+    min-height: 30vh;
+    background-color: var(--btn_bg);
+    grid-column: span 2;
+}
+
+img:hover{
+    transform: scale(1.1);
+    transition: .4s;
+}
+img:not(:hover){
+    transition: .4s;
+}
+
+.footer_html{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5vh;
+    background: var(--div_bg);
+    position: relative;
+    width: 100%;
+    background: var(--div_bg);
+    margin-top: 2%;
+    min-height: 10vh;
+}
+.footer_html a{
+    color: white;
+    transition: .4s;
+    text-decoration: none;
+}
+.footer_html a:visited{
+    color: white;
+}
+.footer_html .menu{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+.footer_html a:hover{
+    color: var(--primary);
+    transition: .4s;
+}
+.footer_html .logo {
+    height: 100%;
+}
+.footer_html .logo img{
+    /* background: url('../img/Logo.svg'); */
+    position: relative;
+    height: 100%;
+    /* width: 100px; */
+    /* background-color: #22005D; */
+}
+.footer_html .loginbtns{
+    display: flex;
+    justify-content: space-around;
+    width: 10vw;
+    align-items: center;
+}
+.footer_html .loginbtns .loginbutton a{
+    color: white;
+}
+.footer_html .loginbtns .changesite{
+    background: var(--primary);
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+.footer_html .loginbtns .changesite a:hover{
+    color: white ;
+}
