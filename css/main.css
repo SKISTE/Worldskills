@@ -58,7 +58,7 @@ div::-webkit-scrollbar-thumb {
 .Header .loginbtns{
     display: flex;
     justify-content: space-around;
-    width: 10vw;
+    width: 20vw;
     align-items: center;
 }
 .Header .loginbtns .loginbutton a{
@@ -69,10 +69,47 @@ div::-webkit-scrollbar-thumb {
     padding: 5px;
     border-radius: 5px;
     color: white;
+    /* min-width: 90%; */
 }
 .Header .loginbtns .changesite a:hover{
     color: white ;
 }
+.Header .loginbtns .changesite ul{
+    position: absolute;
+    transform: scaleY(0);
+    padding: 0;
+    margin-left: -5px;
+    margin-top: 5px;
+    transform-origin: 0 0;
+    /* margin-left: -120px; */
+    list-style: none;
+    /* margin-top: 4px; */
+}
+.Header .loginbtns .changesite ul li{
+    background: var(--primary);
+    padding: 5px;
+}
+.Header .loginbtns div:not(:last-child){
+    padding-right: 15px;
+}
+.Header .loginbtns .changesite ul li:first-child{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.Header .loginbtns .changesite ul li:last-child{
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.Header .loginbtns .changesite ul li:hover{
+    transform: translateX(-10px);
+    transition: .4s;
+}
+.Header .loginbtns .changesite ul li:not(:hover){transition: .4s;}
+.Header .loginbtns .changesite:hover ul{
+    transform: scaleY(1);
+    transition: .4s;
+}
+.Header .loginbtns .changesite:not(:hover) ul{transition: .4s;}
 .IN_CENTER{
     display: flex;
     justify-content: center;

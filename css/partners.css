@@ -1,0 +1,23 @@
+.partners{
+    min-height: 10vh;
+    background-color: var(--btn_bg);
+    grid-column: span 2;
+    border-radius: 5px;
+    padding: 3%;
+    font-size: 1.4em;
+}
+.partners .partners_child{
+    display: grid;
+    /* grid-template-rows: auto; */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap:15px;
+    margin-top: 20px;
+}
+.partners .partners_child img{
+    width: 100%;
+    border-radius: 20px;
+    outline: solid var(--primary) 2px;
+}
+.partners .partners_child img:hover{
+    outline:solid var(--primary) 10px;
+}

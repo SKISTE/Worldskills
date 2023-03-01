@@ -1,6 +1,7 @@
 .Wrapper .news{
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
 }
 .Wrapper .news .title{
     font-size: 1.4em;

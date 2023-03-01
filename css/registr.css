@@ -1,0 +1,53 @@
+.reg_zone{
+    width: 15vw;
+    min-height: 50vh;
+    border-top: 5px var(--primary) solid;
+    border-radius: 10px;
+    display: flex;
+    padding: 3%;
+    margin-top: 0;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+.reg_zone img{
+    width: 20%;
+}
+.reg_zone .input_zone{
+    text-align: center;
+    width: 100%;
+}
+.reg_zone input[type='text'], .reg_zone input[type='password'],.reg_zone input[type='email']{
+    outline: none;
+    border: none;
+    background: none;
+    width: 100%;
+    font-size: 1.4em;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-bottom: 2px solid var(--primary);
+    color: white;
+    transition: .4s;
+}
+.reg_zone input[type='text']:hover,.reg_zone input[type='password']:hover,.reg_zone input[type='email']:hover{
+    background: var(--btn_bg);
+    transition: .4s;
+    outline: 1px solid var(--primary);
+}
+.reg_zone input[type='button']{
+    background: var(--primary);
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 0px;
+    margin-top: 30px;
+    justify-self: end;
+    font-size: 1.4em;
+    color: white;
+    transition: .4s;
+}
+.reg_zone input[type='button']:hover{
+    border-radius: 20px;
+    transition: .4s;
+    cursor: pointer;
+}

@@ -1,6 +1,7 @@
 .Wrapper .rabotodateli{
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
 }
 .Wrapper .rabotodateli .title{
     font-size: 1.4em;
